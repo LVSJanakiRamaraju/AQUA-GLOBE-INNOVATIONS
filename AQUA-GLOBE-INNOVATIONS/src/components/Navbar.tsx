@@ -73,42 +73,42 @@ const Navbar: React.FC = () => {
       >
         <div className="container mx-auto px-4 py-4 space-y-4">
           <a 
-            href="#home" 
+            href="/" 
             className="block text-blue-900 hover:text-blue-600 transition-colors font-medium"
             onClick={() => setIsOpen(false)}
           >
             Home
           </a>
           <a 
-            href="#features" 
+            href="/products" 
             className="block text-blue-900 hover:text-blue-600 transition-colors font-medium"
             onClick={() => setIsOpen(false)}
           >
-            Features
+            Products
           </a>
           <a 
-            href="#how-it-works" 
+            href="/about" 
             className="block text-blue-900 hover:text-blue-600 transition-colors font-medium"
             onClick={() => setIsOpen(false)}
           >
-            How It Works
+            About Us
           </a>
           <a 
-            href="#testimonials" 
+            href="/customers" 
             className="block text-blue-900 hover:text-blue-600 transition-colors font-medium"
             onClick={() => setIsOpen(false)}
           >
-            Testimonials
+            Customers
           </a>
           <a 
-            href="#faq" 
+            href="/certifications" 
             className="block text-blue-900 hover:text-blue-600 transition-colors font-medium"
             onClick={() => setIsOpen(false)}
           >
-            FAQ
+            Certifications
           </a>
           <a 
-            href="#buy-now" 
+            href="/buy-now" 
             className="block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors font-medium text-center"
             onClick={() => setIsOpen(false)}
           >
