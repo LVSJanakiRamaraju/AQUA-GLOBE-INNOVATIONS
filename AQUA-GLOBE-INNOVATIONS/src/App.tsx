@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import CallToAction from './components/CallToAction';
 import Certifications from './components/Certifications';
-import CustomerTestimonials from './components/customers';
+import CustomerTestimonials from './components/Customers';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
