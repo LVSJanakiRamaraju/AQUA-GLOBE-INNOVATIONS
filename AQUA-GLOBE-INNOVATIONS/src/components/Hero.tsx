@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-6 leading-tight">
-              AQUA GLOBE INNOVATIONS
+              SEAWEL FORMULATIONS
             </h1>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
               Aquaculture supplements are essential for maintaining the health and welfare of aquatic organisms in aquaculture systems. These supplements support the prevention of, designed to prevent any diseases and infections. That can affect fish, shrimp, and other culture species.

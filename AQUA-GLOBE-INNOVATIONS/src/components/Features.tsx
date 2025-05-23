@@ -47,12 +47,12 @@ const Features: React.FC = () => {
       <br />
       <div className="container mx-auto px-4 md:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-16">
-          AQUA GLOBE MISSION
+          SEAWEL FORMULATIONS MISSION
         </h2>
         <div className="grid gap-2">
           <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
             <p className="text-gray-600">
-              Our mission is to provide the highest quality AQUA GLOBE INNOVATIONS healthcare products to our customers. AQUA GLOBE INNOVATIONS healthcare products aim to improve the well-being and quality of life of individuals by developing innovative healthcare products that harness the power of water We are committed to providing safe, effective, and sustainable solutions that enhance aquaculture care promote growth, and support the aquaculture industry AQUA GLOBE INNOVATIONS aim to revolutionize the field of aquaculture by delivering products that optimize positive outcomes, ensure hygienic practices, and enable superior aquatics supplements.
+              Our mission is to provide the highest quality SEAWEL FORMULATIONS healthcare products to our customers. SEAWEL FORMULATIONS healthcare products aim to improve the well-being and quality of life of individuals by developing innovative healthcare products that harness the power of water We are committed to providing safe, effective, and sustainable solutions that enhance aquaculture care promote growth, and support the aquaculture industry Seawel Formulations aim to revolutionize the field of aquaculture by delivering products that optimize positive outcomes, ensure hygienic practices, and enable superior aquatics supplements.
             </p>
           </div>
         </div>
@@ -63,12 +63,12 @@ const Features: React.FC = () => {
       <br />
       <div className="container mx-auto px-4 md:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-16">
-          AQUA GLOBE VISION
+          SEAWEL FORMULATIONS VISION
         </h2>
         <div className="grid gap-2">
           <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
             <p className="text-gray-600">
-              The vision of AQUA GLOBE INNOVATIONS healthcare products is to provide innovative and sustainable solutions that promote health and well- being of shrimp, fish and other aquatic species.
+              The vision of SEAWEL FORMULATIONS healthcare products is to provide innovative and sustainable solutions that promote health and well- being of shrimp, fish and other aquatic species.
             </p>
           </div>
         </div>

@@ -28,28 +28,28 @@ const About: React.FC = () => {
     <section id="#about" className="py-16 bg-white">
       <div className="container mx-auto px-4 md:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-12">
-          AQUA GLOBE INNOVATIONS
+          Seawel Formulations
         </h2>
 
         <div className="max-w-4xl mx-auto space-y-12">
           <div>
-            <h3 className="text-xl font-semibold text-blue-800 mb-4">About Aqua Globe Innovations:</h3>
+            <h3 className="text-xl font-semibold text-blue-800 mb-4">About Seawel Formulations:</h3>
             <p className="text-gray-700 leading-relaxed">
-              Aqua Globe Innovations is a pioneering company dedicated to advancing fish and shrimp healthcare solutions. With a steadfast commitment to excellence, we strive to enhance the well-being and vitality of aquatic life worldwide. Our core focus lies in developing and delivering top-tier products and services tailored to the unique needs of aquaculture.
+              Seawel Formulations is a pioneering company dedicated to advancing fish and shrimp healthcare solutions. With a steadfast commitment to excellence, we strive to enhance the well-being and vitality of aquatic life worldwide. Our core focus lies in developing and delivering top-tier products and services tailored to the unique needs of aquaculture.
             </p>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-800 mb-4">Certified GMP & ISO Standards:</h3>
             <p className="text-gray-700 leading-relaxed">
-              At Aqua Globe Innovations, quality is paramount. We adhere to rigorous Good Manufacturing Practices (GMP) and International Organization for Standardization (ISO) standards to ensure the highest level of quality, safety, and efficacy in all our products and processes. Our adherence to these certifications underscores our unwavering dedication to providing premium solutions that meet global regulatory requirements.
+              At Seawel Formulations, quality is Our Priority. We adhere to rigorous Good Manufacturing Practices (GMP) and International Organization for Standardization (ISO) standards to ensure the highest level of quality, safety, and efficacy in all our products and processes. Our adherence to these certifications underscores our unwavering dedication to providing premium solutions that meet global regulatory requirements.
             </p>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-800 mb-4">Mission:</h3>
             <p className="text-gray-700 leading-relaxed">
-              Our mission at Aqua Globe Innovations is to revolutionize the aquaculture industry by offering innovative, science-backed healthcare solutions that optimize fish and shrimp health, maximize productivity, and promote sustainable practices. Through our commitment to excellence and integrity, we aim to be a trusted partner for aquaculture professionals worldwide.
+              Our mission at Seawel Formulations is to revolutionize the aquaculture industry by offering innovative, science-backed healthcare solutions that optimize fish and shrimp health, maximize productivity, and promote sustainable practices. Through our commitment to excellence and integrity, we aim to be a trusted partner for aquaculture professionals worldwide.
             </p>
           </div>
 
@@ -73,7 +73,7 @@ const About: React.FC = () => {
           </div>
 
           <p className="text-gray-700 leading-relaxed italic text-center">
-            At Aqua Globe Innovations, we are driven by a passion for innovation, a commitment to quality, and a deep respect for the natural world. Join us in our journey to redefine the future of aquaculture healthcare.
+            At Seawel Formulations, we are driven by a passion for innovation, a commitment to quality, and a deep respect for the natural world. Join us in our journey to redefine the future of aquaculture healthcare.
           </p>
         </div>
       </div>

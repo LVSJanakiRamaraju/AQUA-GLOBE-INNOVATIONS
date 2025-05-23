@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         {/* Logo and Company Name */}
         <div className="flex items-center justify-center mb-6 space-x-3">
           <Droplets size={24} className="text-blue-400" />
-          <span className="text-lg font-semibold tracking-wide">AQUA GLOBE INNOVATIONS</span>
+          <span className="text-lg font-semibold tracking-wide">SEAWEL FORMULATIONS</span>
         </div>
 
         {/* Contact Info */}
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
 
         {/* Copyright */}
         <div className="mt-8 text-center text-xs text-gray-500 select-none">
-          &copy; {new Date().getFullYear()} Aqua Globe Innovations. All rights reserved.
+          &copy; {new Date().getFullYear()} SEAWEL FORMULATIONS. All rights reserved.
         </div>
       </div>
     </footer>

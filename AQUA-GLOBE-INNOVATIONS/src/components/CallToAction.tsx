@@ -54,17 +54,17 @@ const CallToAction: React.FC = () => {
           {/* Left Text Content */}
           <div className="md:w-1/2">
             <h2 className="text-4xl font-extrabold mb-6 leading-tight">
-              Get Your Aqua Globe Today
+              Get Your Seawel Formulation Today
             </h2>
             <p className="text-lg text-gray-700 mb-8 max-w-md">
-              Transform your plant care routine with our innovative self-watering solution. Perfect for all plant lovers!
+              Transform your plant care routine with our innovative solution. Perfect for all Aqua lovers!
             </p>
 
             <ul className="space-y-4 text-gray-600 max-w-xs">
               {[
                 "100% Satisfaction Guaranteed",
-                "Free Shipping on Orders Over $50",
-                "30-Day Money-Back Guarantee"
+                "Free Shipping on Orders Over ₹1000",
+                "7-Day Money-Back Guarantee"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3">
                   <Check className="text-blue-500" size={22} />

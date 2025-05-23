@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Droplets size={32} className="text-blue-600 mr-2" />
-            <span className="text-xl font-semibold text-blue-900">Aqua Globe Innovations</span>
+            <span className="text-xl font-semibold text-blue-900">Seawel Formulations</span>
           </div>
 
           {/* Desktop Navigation */}
