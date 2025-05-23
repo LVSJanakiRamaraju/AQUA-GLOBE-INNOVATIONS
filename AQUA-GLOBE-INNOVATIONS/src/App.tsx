@@ -6,6 +6,7 @@ import Products from './components/Products';
 import Footer from './components/Footer';
 import About from './components/About';
 import CallToAction from './components/CallToAction';
+import Certifications from './components/Certifications';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
           <Route path='/buy-now' element={<CallToAction />} />
+          <Route path='certifications' element={<Certifications />} />
         </Routes>
         <Footer />
       </div>
