@@ -13,8 +13,7 @@ const customers = [
     name: "Arvind T.",
     image: "/customer3.jpeg",
     message: "Trusted brand. Great support from Seawel Formulations team.",
-  },
-  // Add more...
+  }
 ];
 
 const CustomerTestimonials = () => {
