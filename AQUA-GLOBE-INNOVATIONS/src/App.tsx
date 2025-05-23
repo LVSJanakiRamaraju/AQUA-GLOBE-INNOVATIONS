@@ -35,7 +35,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path='/buy-now' element={<CallToAction />} />
           <Route path='/customers' element={<CustomerTestimonials />} />
-          <Route path='certifications' element={<Certifications />} />
+          <Route path='/certifications' element={<Certifications />} />
         </Routes>
         <Footer />
       </div>
