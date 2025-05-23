@@ -16,14 +16,14 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row md:justify-center md:space-x-16 space-y-4 md:space-y-0 text-center md:text-left text-sm">
           <div className="flex items-center justify-center md:justify-start space-x-2">
             <MapPin size={18} className="text-blue-400" />
-            <p>#300A, Auto Nagar Y Junction, Mangalagiri, Guntur, Andhra Pradesh, 522502</p>
+            <p>Flat No. 1-8, Main Road, Somasundarapalem, Tenali, Guntur, Andhra Pradesh - 522202</p>
           </div>
 
           <div className="flex items-center justify-center md:justify-start space-x-2">
             <Phone size={18} className="text-blue-400" />
             <p>
-              <a href="tel:+919291207999" className="hover:text-white">
-                9291 207 999
+              <a href="tel:+919652162667" className="hover:text-white">
+                9652162667
               </a>
             </p>
           </div>
@@ -31,8 +31,8 @@ const Footer: React.FC = () => {
           <div className="flex items-center justify-center md:justify-start space-x-2">
             <Mail size={18} className="text-blue-400" />
             <p>
-              <a href="mailto:aquaglobeinnovations@gmail.com" className="hover:text-white">
-                aquaglobeinnovations@gmail.com
+              <a href="mailto:seawelformulations@gmail.com" className="hover:text-white">
+                seawelformulations@gmail.com
               </a>
             </p>
           </div>
