@@ -45,9 +45,6 @@ const Navbar: React.FC = () => {
             <a href="/customers" className="text-blue-900 hover:text-blue-600 transition-colors font-medium">
               Customers
             </a>
-            <a href="/certifications" className="text-blue-900 hover:text-blue-600 transition-colors font-medium">
-              Certifications
-            </a>
             <a 
               href="/buy-now" 
               className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors font-medium"
@@ -99,13 +96,6 @@ const Navbar: React.FC = () => {
             onClick={() => setIsOpen(false)}
           >
             Customers
-          </a>
-          <a 
-            href="/certifications" 
-            className="block text-blue-900 hover:text-blue-600 transition-colors font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Certifications
           </a>
           <a 
             href="/buy-now" 
