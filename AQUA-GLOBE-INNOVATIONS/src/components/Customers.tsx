@@ -7,7 +7,7 @@ const customers = [
   {
     name: "Sujatha R.",
     image: "/customer2.jpeg",
-    message: "Very effective. Fish are more active and healthy now.",
+    message: "Very effective. Shrimp are more active and healthy now.",
   },
   {
     name: "Arvind T.",
