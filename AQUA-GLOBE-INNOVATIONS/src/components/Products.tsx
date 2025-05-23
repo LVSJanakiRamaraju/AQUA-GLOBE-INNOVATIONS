@@ -11,77 +11,77 @@ const Products: React.FC = () => {
     {
       name: "20 COUNT",
       subtitle: "WATER AND SOIL PROBIOTIC",
-      image: "../../public/20Count.png"
+      image: "/20Count.png"
     },
     {
       name: "BOTTOM 365",
       subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "../../public/bottom365.png"
+      image: "/bottom365.png"
     },
     {
       name: "CP RATION",
       subtitle: "CONTROL FOR RUNNING MORTALITY",
-      image: "../../public/cpRatio.png"
+      image: "/cpRatio.png"
     },
     {
       name: "GUT WEL",
       subtitle: "WHITE FAECES PREVENTION AND CONTROL",
-      image: "../../public/gutWel.png"
+      image: "/gutWel.png"
     },
     {
       name: "IMMORTAL",
       subtitle: "PROBIOTIC SOLUTION FOR AMMONIA AND NITRATE",
-      image: "../../public/immortal.png"
+      image: "/immortal.png"
     },
     {
       name: "KICK START",
       subtitle: "MICRO AND MACRO MINERALS",
-      image: "../../public/kickStart.png"
+      image: "/kickStart.png"
     },
     {
       name: "K PEARL",
       subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "../../public/kPearl.png"
+      image: "/kPearl.png"
     },
     {
       name: "MG PEARL",
       subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "../../public/mgPearl.png"
+      image: "/mgPearl.png"
     },
     {
       name: "NO LOADS",
       subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "../../public/noLoads.png"
+      image: "/noLoads.png"
     },
     {
       name: "PEARL MIX",
       subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "../../public/pearlMix.png"
+      image: "/pearlMix.png"
     },
     {
       name: "POND WEL",
       subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "../../public/pondWel.png"
+      image: "/pondWel.png"
     },
     {
       name: "SEA PEARL",
       subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "../../public/seaPearl.png"
+      image: "/seaPearl.png"
     },
     {
       name: "SEAWEL BACT",
       subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "../../public/seawelBact.png"
+      image: "/seawelBact.png"
     },
     {
       name: "SEAWEL GEL",
       subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "../../public/seawelGel.png"
+      image: "/seawelGel.png"
     },
     {
       name: "VANNA HEP",
       subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "../../public/vannaHep.png"
+      image: "/vannaHep.png"
     }
   ];
 

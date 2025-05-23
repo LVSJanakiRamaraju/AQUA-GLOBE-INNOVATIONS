@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
           </div>
             <div className="md:w-1/2 order-first md:order-none mt-8 md:mt-0">
             <img
-              src="../../public/banner.png"
+              src="/banner.png"
               alt="Hero Image"
               className="w-full h-auto rounded-lg shadow-lg opacity-40  transition-opacity duration-300"
             />

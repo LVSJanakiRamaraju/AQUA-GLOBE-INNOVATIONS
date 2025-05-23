@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">
-            <img src="../../public/logo.png" alt="Aqua Globe Innovations Logo" className="w-10 h-10 rounded-full border border-blue-200 shadow-sm" />
+            <img src="/logo.png" alt="Aqua Globe Innovations Logo" className="w-10 h-10 rounded-full border border-blue-200 shadow-sm" />
             <span className="text-xl font-semibold text-blue-900">Seawel Formulations</span>
             </div>
 

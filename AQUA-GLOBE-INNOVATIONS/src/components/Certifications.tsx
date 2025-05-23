@@ -4,7 +4,7 @@ const Certifications: React.FC = () => {
   const certs = [
     {
       title: "GMP Certified Company",
-      image: "../../public/GMP_Certification.png", 
+      image: "/GMP_Certification.png", 
       description: `
         Aqua Globe Innovations is proud to announce that we have achieved GMP (Good Manufacturing Practices) certification, a significant milestone in our commitment to quality, safety, and excellence.
         
@@ -17,7 +17,7 @@ const Certifications: React.FC = () => {
     },
     {
       title: "ISO Certified Company",
-      image: "../../public/ISO_Certification.png", 
+      image: "/ISO_Certification.png", 
       description: `
         Aqua Globe Innovations has achieved ISO 9001:2015 certification, a testament to our dedication to quality management and customer satisfaction.
         
