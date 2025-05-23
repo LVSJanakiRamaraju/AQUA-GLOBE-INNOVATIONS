@@ -9,34 +9,79 @@ interface Product {
 const Products: React.FC = () => {
   const products: Product[] = [
     {
-      name: "Pro-Globe",
+      name: "20 COUNT",
       subtitle: "WATER AND SOIL PROBIOTIC",
-      image: "/products/pro-globe.png"
+      image: "../../public/20Count.png"
     },
     {
-      name: "VB-X",
+      name: "BOTTOM 365",
       subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "/products/vb-x.png"
+      image: "../../public/bottom365.png"
     },
     {
-      name: "RUN OUT",
+      name: "CP RATION",
       subtitle: "CONTROL FOR RUNNING MORTALITY",
-      image: "/products/run-out.png"
+      image: "../../public/cpRatio.png"
     },
     {
-      name: "WHITE SHIELD-L",
+      name: "GUT WEL",
       subtitle: "WHITE FAECES PREVENTION AND CONTROL",
-      image: "/products/white-shield.png"
+      image: "../../public/gutWel.png"
     },
     {
-      name: "GLOBE NB",
+      name: "IMMORTAL",
       subtitle: "PROBIOTIC SOLUTION FOR AMMONIA AND NITRATE",
-      image: "/products/globe-nb.png"
+      image: "../../public/immortal.png"
     },
     {
-      name: "GLOBE MIN",
+      name: "KICK START",
       subtitle: "MICRO AND MACRO MINERALS",
-      image: "/products/globe-min.png"
+      image: "../../public/kickStart.png"
+    },
+    {
+      name: "K PEARL",
+      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
+      image: "../../public/kPearl.png"
+    },
+    {
+      name: "MG PEARL",
+      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
+      image: "../../public/mgPearl.png"
+    },
+    {
+      name: "NO LOADS",
+      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
+      image: "../../public/noLoads.png"
+    },
+    {
+      name: "PEARL MIX",
+      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
+      image: "../../public/pearlMix.png"
+    },
+    {
+      name: "POND WEL",
+      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
+      image: "../../public/pondWel.png"
+    },
+    {
+      name: "SEA PEARL",
+      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
+      image: "../../public/seaPearl.png"
+    },
+    {
+      name: "SEAWEL BACT",
+      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
+      image: "../../public/seawelBact.png"
+    },
+    {
+      name: "SEAWEL GEL",
+      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
+      image: "../../public/seawelGel.png"
+    },
+    {
+      name: "VANNA HEP",
+      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
+      image: "../../public/vannaHep.png"
     }
   ];
 
@@ -48,15 +93,16 @@ const Products: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product, index) => (
             <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="aspect-square overflow-hidden rounded-lg mb-4">
+              <div className="aspect-square  rounded-lg mb-4">
+                <h3 className="text-xl font-bold text-blue-600">{product.name}</h3>
+                <p className="text-gray-600 mt-2">{product.subtitle}</p>
                 <img 
                   src={product.image} 
                   alt={product.name} 
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-xl font-bold text-blue-600">{product.name}</h3>
-              <p className="text-gray-600 mt-2">{product.subtitle}</p>
+
             </div>
           ))}
         </div>

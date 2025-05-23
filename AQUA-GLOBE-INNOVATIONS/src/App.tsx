@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   useEffect(() => {
-    document.title = 'Aqua Globe Innovations | Aquaculture Supplements';
+    document.title = 'Seawel Formulations | Aquaculture Supplements';
   }, []);
 
   return (

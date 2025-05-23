@@ -3,8 +3,11 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-blue-50 to-white">
-      <div className="container mx-auto px-4 md:px-8">
+    <section
+      id="home"
+      className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-blue-50 to-white relative overflow-hidden"
+    >
+      <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-6 leading-tight">
@@ -29,16 +32,15 @@ const Hero: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="md:w-1/2 mt-12 md:mt-0 relative">
-            <div className="relative z-10">
-              <img 
-                src="/aqua-globe-logo.png" 
-                alt="Aqua Globe Innovations Logo" 
-                className="w-full max-w-md mx-auto"
-              />
+            <div className="md:w-1/2 order-first md:order-none mt-8 md:mt-0">
+            <img
+              src="../../public/banner.png"
+              alt="Hero Image"
+              className="w-full h-auto rounded-lg shadow-lg opacity-40  transition-opacity duration-300"
+            />
+            <br/>
             </div>
-          </div>
-        </div>
+      </div>
       </div>
     </section>
   );
