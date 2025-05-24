@@ -26,8 +26,8 @@ const categories: Category[] = [
     size: 'large',
     products: [
       {
-        name: 'Sea pearl',
-        description: 'Premium mineral supplement',
+        name: 'Seawel Sea pearl',
+        description: 'Liquid Minerals',
         composition: 'Calcium, Magnesium, Zinc, Potash, Copper and other Micro Nutrients',
         image: '/seaPearl.png',
         benefits: [
@@ -42,227 +42,357 @@ const categories: Category[] = [
         usageDirection: 'Apply in the pond evening time between 6 to 8 pm mix with pond water and apply evenly all over pond area, keep the aerators running.',
         netVolume: '5 Ltr.'
       },
-      {
-        name: 'Cp ratio',
-        description: 'Balanced mineral formula',
-        composition: 'Minerals, Trace Elements',
-        image: '/cpRatio.png',
+        {
+        name: "Seawel CP Ratio",
+        description: "Liquid minerals for shrimp health.",
+        composition: " Calcium, Phosphorus, Sodium, Copper, Manganese, Zinc, Magnesium, Cobalt.",
+        image: "/cpRatio.png",
         benefits: [
-          'Balances mineral profile in pond water.',
-          'Improves feed conversion ratio.',
-          'Supports metabolic activities and improves shrimp health.'
+            "Helps prevent loose shell and reduce mortality.",
+            "Increases survival rate and reduces stress on shrimp.",
+            "Reduces white muscle problem and cramping in shrimp.",
+            "Balances the calcium and phosphorus levels in shrimp.",
+            "Helps proper development of external skeleton."
         ],
-        dosageWater: '2 litres/acre or as advised by aqua consultant.',
-        dosageFeed: '10 ml/kg feed.',
-        usageDirection: 'Mix with pond water and broadcast evenly.',
-        netVolume: '5 Ltr.'
-      },
-      {
-        name: 'Mg pearl',
-        description: 'Magnesium-rich supplement',
-        composition: 'Magnesium, Trace Minerals',
-        image: '/mgPearl.png',
+        dosageWater: "2 to 3 litres/acre or as advised by aqua culture consultant.",
+        dosageFeed: "10 to 20 ml/kg feed.",
+        usageDirection: "Take required quantity of liquid and apply evenly in the pond.",
+        netVolume: "5 Ltr."
+        },
+
+        {
+        name: "Seawel Mg-PEARL",
+        description: "Magnesium in chelated form for shrimp health.",
+        composition: "Chelated Magnesium enriched with amino acids and growth promoters.",
+        image: "/mgPearl.png",
         benefits: [
-          'Corrects magnesium deficiency in pond water.',
-          'Promotes healthy molting and muscle growth.',
-          'Improves osmoregulation in shrimp.'
+            "Improves activeness of the shrimp.",
+            "Maintains magnesium level in the shrimp.",
+            "Reduces running mortality, cramping, and loose shell problems.",
+            "Improves water quality and stabilizes water pH.",
+            "Increases survival rate in the pond and improves shrimp health."
         ],
-        dosageWater: '2 to 3 litres/acre.',
-        dosageFeed: 'Not applicable.',
-        usageDirection: 'Dilute with pond water and apply evenly.',
-        netVolume: '5 Ltr.'
-      },
-      {
-        name: 'K pearl',
-        description: 'Potassium-enriched formula',
-        composition: 'Potassium, Micro Nutrients',
-        image: '/kPearl.png',
+        dosageWater: "2 to 3 litres/acre/week or as advised by aqua culture consultant.",
+        dosageFeed: "10 to 20 ml/kg feed.",
+        usageDirection: "Apply in the pond evening time between 6 to 8 pm, mix with pond water and apply evenly all over pond area, keep the aerators running.",
+        netVolume: "5 Ltr."
+        },
+
+        {
+        name: "Seawel K-Pearl",
+        description: "Potassium in chelated form for shrimp and fish health.",
+        composition: "Chelated Potassium enriched with amino acids and growth promoters.",
+        image: "/kPearl.png",
         benefits: [
-          'Improves osmoregulation and energy metabolism.',
-          'Enhances molting and growth.',
-          'Reduces stress during culture period.'
+            "Improves metabolic activity in shrimp and fish.",
+            "Improves water quality and stabilizes water pH.",
+            "Maintains the potassium level in the shrimp and fish.",
+            "Reduces running mortality and increases the growth rate.",
+            "Increases survival rate in the pond and reduces mineral problems in shrimp."
         ],
-        dosageWater: '2 to 3 litres/acre.',
-        dosageFeed: 'Not applicable.',
-        usageDirection: 'Mix with pond water and apply uniformly.',
-        netVolume: '5 Ltr.'
-      },
-      {
-        name: 'Pearl mix',
-        description: 'Complete mineral blend',
-        composition: 'Macro and Micro Mineral Mix',
-        image: '/pearlMix.png',
+        dosageWater: "2 to 3 litres/acre/week or as advised by aqua culture consultant.",
+        dosageFeed: "10 to 20 ml/kg feed.",
+        usageDirection: "Apply in the pond evening time between 6 to 8 pm, mix with pond water and apply evenly all over pond area, keep the aerators running.",
+        netVolume: "5 Ltr."
+        },
+
+        {
+        name: "Seawel Pearl-Mix",
+        description: "Micro and Macro Minerals in Crystal Form.",
+        composition: "Calcium, Magnesium, Sodium, Phosphorus, Potassium, Manganese, Zinc, Silicates.",
+        image: "/pearlMix.png",
         benefits: [
-          'Provides all essential minerals for shrimp health.',
-          'Boosts immunity and stress resistance.',
-          'Improves feed utilization and growth performance.'
+            "Helps in better muscle formation in shrimp.",
+            "Helps in prevention of soft shell problems.",
+            "Helps better growth and increases body weight.",
+            "Minimizes stress and helps to moulting.",
+            "Improves survival rate and reduces running mortality."
         ],
-        dosageWater: '3 litres/acre.',
-        dosageFeed: '10 ml/kg feed.',
-        usageDirection: 'Apply in the evening with running aerators.',
-        netVolume: '5 Ltr.'
-      }
+        dosageWater: "10 to 20 kg/acre/week or as advised by aqua culture consultant.",
+        dosageFeed: "10 to 20 grams/kg feed.",
+        usageDirection: "Mix with pond water and apply evenly all over pond area, keep the aerators running.",
+        netVolume: "10 kg"
+        }
+
     ]
   },
   {
     name: 'FEED SUPPLEMENTS',
     size: 'medium',
     products: [
-      {
-        name: 'Gut wel',
-        description: 'Digestive health support',
-        composition: 'Herbal Extracts, Enzymes, Organic Acids',
-        image: '/gutWel.png',
+        {
+        name: "Seawel Gut Wel",
+        description: "Advanced formula for white gut and white faeces",
+        composition: "Prebiotics, Probiotics, Phospholipids, Vitamins, Enzymes and liver enhancers.",
+        image: "/gutWel.png",
         benefits: [
-          'Improves digestion and gut health.',
-          'Enhances nutrient absorption.',
-          'Reduces white gut and vibrio-related problems.'
+            "Modulates immunity.",
+            "Helps prevent white gut & active hepatopancreas.",
+            "Improves feed intake.",
+            "Improves intestinal health.",
+            "Helps increase growth and weight of the shrimp."
+        ],
+        dosageWater: "Not applicable.",
+        dosageFeed: "8 to 10 grams/kg feed, 2 meals/day, twice every 10 days.",
+        usageDirection: "8 to 10 grams/kg feed, 2 meals/day. Mix with a good binding agent.",
+        netVolume: "1 kg"
+        },
+
+        {
+        name: "Seawel Kick Start",
+        description: "Multi Vitamins, Enzymes & Growth Promoters",
+        composition: "High concentration of multi vitamins, essential amino acids, chelated minerals and growth promoters.",
+        image: "/kickStart.png",
+        benefits: [
+            "Increases the survival rate in the pond.",
+            "Improves feed conversion ratio.",
+            "Enhances immunity system.",
+            "Stabilizes the gut pH and improves shrimp digestion system.",
+            "Improves feed intake and increases the animal's energy."
+        ],
+        dosageWater: "3 to 5kg/acre/week or as advised by aqua culture consultant.",
+        dosageFeed: "10 to 20g/kg feed/2 meals/twice in a week.",
+        usageDirection: "10 to 20g/kg feed/2 meals/twice in a week mix with good binding agent.",
+        netVolume: "500g & 1kg"
+        },
+
+        {
+        name: "Seawel Immortal",
+        description: "Reduce RMS Problem",
+        composition: "Probiotics, Prebiotics, Vitamins and Growth promoters and natural ingredients.",
+        image: "/immortal.png",
+        benefits: [
+            "Reduces running mortality and increases survival rate.",
+            "Helps active functioning of hepatopancreas.",
+            "Improves digestion and F.C.R.",
+            "Helps for fast growth and increases shrimp weight.",
+            "Enhances immunity in the shrimp and reduces harmful bacteria like (vibrio) in the shrimp gut and hepatopancreas."
+        ],
+        dosageWater: "Not applicable.",
+        dosageFeed: "8 to 10 grams/kg feed/2 meals/day twice in every 10 days.",
+        usageDirection: "8 to 10 grams/kg feed/2 meals/day mix with a good binding agent.",
+        netVolume: "500g"
+        },
+
+        {
+        name: "Seawel 20 Count",
+        description: "Quick Harvest with 20 Count",
+        composition: "Combination of Multi vitamins, Chelated Multi minerals, bacillus, lacto bacillus spp., amino acids and growth promoters.",
+        image: "/20Count.png",
+        benefits: [
+            "Helps enhance immunity in shrimp.",
+            "Increases growth and improves shrimp digestive system.",
+            "Relieves stress and helps reduce cramps in shrimp.",
+            "Improves digestion and weight gain of the shrimp.",
+            "Enhances shrimp energy and supports moulting."
+        ],
+        dosageWater: "Not applicable.",
+        dosageFeed: "5 to 10 grams/kg feed/2 meals/day twice in every 10 days or moulting period or as advised by aqua culture consultant.",
+        usageDirection: "Mix with a good binding agent 2 meals/day.",
+        netVolume: "500g"
+        },
+      {
+        name: 'Seawel Vanna Hep',
+        description: 'Liver health enhancer',
+        composition: 'Probiotics, Amino Acids, Peptides, Vitamins, Enzymes, Growth promotes and Natural ingredients',
+        image: '/vannaHep.png',
+        benefits: [
+          'Helps in maintaining healthy HP',
+          'Increases the growth and weight gain of the shrimp.',
+          'Prevents white faeces, running mortality and other diseases.',
+          'Helps to intake and with better FCR',
+          'Enhances the immunity of the shrimp.'
         ],
         dosageWater: 'Not applicable.',
-        dosageFeed: '5 to 10 ml/kg feed.',
-        usageDirection: 'Mix with feed using binder before feeding.',
-        netVolume: '1 Ltr.'
+        dosageFeed: '8 to 10 gr/kg feed /2 months.day twice in every 10 days.',
+        usageDirection: '8 to 10 gr/kg feed /2 meals/day mix with a good binding agent.',
+        netVolume: '500 g.'
       },
-      {
-        name: 'Kick start',
-        description: 'Growth initiator',
-        composition: 'Amino Acids, Vitamins, Trace Minerals',
-        image: '/kickStart.png',
+    {
+        name: "Seawel Gel",
+        description: "Liver Care Supplement",
+        composition: "Advanced formulation enhanced with protein fortifiers, Amino Acids with growth promoters.",
+        image: "/seawelGel.png",
         benefits: [
-          'Enhances feed intake and growth.',
-          'Boosts metabolism and energy levels.',
-          'Promotes better health and performance.'
+            "Improves feed conversion ratio.",
+            "Increases the survival rate in the pond.",
+            "Enhances immunity system.",
+            "Improves gut health in the shrimp.",
+            "Improves feed intake and increases the animal's energy."
         ],
-        dosageWater: 'Not applicable.',
-        dosageFeed: '5 ml/kg feed.',
-        usageDirection: 'Use daily in feed for first 30 days of culture.',
-        netVolume: '1 Ltr.'
-      },
-      {
-        name: 'Immortal',
-        description: 'Immunity booster',
-        composition: 'Beta Glucans, Herbal Immunostimulants',
-        image: '/immortal.png',
-        benefits: [
-          'Strengthens immune system.',
-          'Prevents bacterial and viral infections.',
-          'Improves survival rate and resistance to stress.'
-        ],
-        dosageWater: 'Not applicable.',
-        dosageFeed: '5 ml/kg feed.',
-        usageDirection: 'Mix thoroughly with feed and feed during critical stages.',
-        netVolume: '1 Ltr.'
-      },
-      {
-        name: '20 count',
-        description: 'Premium feed supplement',
-        composition: 'Enzymes, Probiotics, Vitamins',
-        image: '/20Count.png',
-        benefits: [
-          'Improves digestion and immunity.',
-          'Enhances growth and reduces FCR.',
-          'Prevents early mortality syndrome.'
-        ],
-        dosageWater: 'Not applicable.',
-        dosageFeed: '5 ml/kg feed.',
-        usageDirection: 'Use regularly in feed during culture period.',
-        netVolume: '1 Ltr.'
-      }
+        dosageWater: "Not applicable.",
+        dosageFeed: "20 to 30 ml/kg feed/2 meals/day in every 10 days.",
+        usageDirection: "20 to 30 ml/kg feed/2 meals/2 day twice in every 10 days.",
+        netVolume: "20 Ltr."
+        }
+
     ]
   },
   {
     name: 'GROWTH PROMOTER',
     size: 'small',
     products: [
-      {
-        name: '20 count',
-        description: 'Enhanced growth formula',
-        composition: 'Digestive Enzymes, Growth Factors, Vitamins',
-        image: '/20Count.png',
+        {
+        name: "Seawel 20 Count",
+        description: "Quick Harvest with 20 Count",
+        composition: "Combination of Multi vitamins, Chelated Multi minerals, bacillus, lacto bacillus spp., amino acids and growth promoters.",
+        image: "/20Count.png",
         benefits: [
-          'Promotes faster growth in shrimp.',
-          'Improves feed conversion and health.',
-          'Supports healthy gut flora and immune defense.'
+            "Helps enhance immunity in shrimp.",
+            "Increases growth and improves shrimp digestive system.",
+            "Relieves stress and helps reduce cramps in shrimp.",
+            "Improves digestion and weight gain of the shrimp.",
+            "Enhances shrimp energy and supports moulting."
         ],
-        dosageWater: 'Not applicable.',
-        dosageFeed: '5 ml/kg feed.',
-        usageDirection: 'Apply with feed once daily for 15-20 days in mid-cycle.',
-        netVolume: '1 Ltr.'
-      }
+        dosageWater: "Not applicable.",
+        dosageFeed: "5 to 10 grams/kg feed/2 meals/day twice in every 10 days or moulting period or as advised by aqua culture consultant.",
+        usageDirection: "Mix with a good binding agent 2 meals/day.",
+        netVolume: "500g"
+        }
     ]
   },
   {
     name: 'WHITE GUT',
     size: 'small',
     products: [
-      {
-        name: 'Gut wel',
-        description: 'Specialized gut health solution',
-        composition: 'Herbal Extracts, Organic Compounds',
-        image: '/gutWel.png',
+        {
+        name: "Seawel Gut Wel",
+        description: "Advanced formula for white gut and white faeces",
+        composition: "Prebiotics, Probiotics, Phospholipids, Vitamins, Enzymes and liver enhancers.",
+        image: "/gutWel.png",
         benefits: [
-          'Targets white gut and related disorders.',
-          'Strengthens gut lining and digestion.',
-          'Reduces gut pathogens effectively.'
+            "Modulates immunity.",
+            "Helps prevent white gut & active hepatopancreas.",
+            "Improves feed intake.",
+            "Improves intestinal health.",
+            "Helps increase growth and weight of the shrimp."
         ],
-        dosageWater: 'Not applicable.',
-        dosageFeed: '10 ml/kg feed.',
-        usageDirection: 'Mix with feed using a binder and apply for 5–7 days.',
-        netVolume: '1 Ltr.'
-      }
+        dosageWater: "Not applicable.",
+        dosageFeed: "8 to 10 grams/kg feed, 2 meals/day, twice every 10 days.",
+        usageDirection: "8 to 10 grams/kg feed, 2 meals/day. Mix with a good binding agent.",
+        netVolume: "1 kg"
+        },
     ]
   },
   {
     name: 'PROBIOTICS',
     size: 'medium',
     products: [
-      {
-        name: 'No loads v',
-        description: 'Advanced probiotic formula',
-        composition: 'Bacillus spp., Nitrosomonas, Nitrifiers',
-        image: '/noLoads.png',
+        {
+        name: "Seawel No Loads-V",
+        description: "Fights with Vibrio Bacteria",
+        composition: "Bacillus subtilis, Bacillus polymyxa, Bacillus licheniformis, Bacillus coagulans, Bacillus megaterium, Bacillus amyloliquefaciens 12 billion CFU/gram.",
+        image: "/noLoads.png",
         benefits: [
-          'Controls sludge and waste accumulation.',
-          'Maintains water quality and reduces toxic gases.',
-          'Improves pond bottom conditions.'
+            "Increases the survival in the pond.",
+            "Reduces stress on shrimp.",
+            "Reduces vibrio loads in the pond.",
+            "Regulates growth and improves immunity.",
+            "Reduces water exchange in pond.",
+            "Reduces the usage quantity of probiotics.",
+            "Improves water quality and stabilizes the water pH in the pond.",
+            "Improves gut health and digestion in shrimp.",
+            "Helps to control the harmful bacteria such as vibrio."
         ],
-        dosageWater: '1 kg/acre.',
-        dosageFeed: 'Not applicable.',
-        usageDirection: 'Apply directly to pond after mixing with water.',
-        netVolume: '1 kg.'
-      },
-      {
-        name: 'Seawell bact',
-        description: 'Marine probiotic blend',
-        composition: 'Live beneficial bacteria strains',
-        image: '/seawelBact.png',
+        dosageWater: "500 grams/acre/week; better results if mixed with jaggery or molasses or as advised by aqua culture consultant.",
+        dosageFeed: "5 to 10 grams/kg feed/ twice in 15 days.",
+        usageDirection: "Mix with fresh or bore water and apply evenly all over pond area, keep the aerators running.",
+        netVolume: "500g"
+        },
+
+        {
+        name: "Seawel Bact",
+        description: "Water Probiotic",
+        composition: "Combination of bacillus strains, enzymes and vitamins. 10 billion CFU/gram.",
+        image: "/seawelBact.png",
         benefits: [
-          'Maintains pond ecosystem balance.',
-          'Decomposes organic waste and sludge.',
-          'Improves water clarity and shrimp health.'
+            "Improves water quality.",
+            "Improves DO level in the pond.",
+            "Improves gut health.",
+            "Stabilizes water pH and alkalinity.",
+            "Reduces water exchange in pond.",
+            "Reduces the water coarse.",
+            "Increases survival rate.",
+            "Reduces harmful loads like vibrio.",
+            "Protects pond bottom from organic loads."
         ],
-        dosageWater: '500 g to 1 kg/acre.',
-        dosageFeed: 'Not applicable.',
-        usageDirection: 'Broadcast after mixing in pond water during calm hours.',
-        netVolume: '1 kg.'
-      },
-      {
-        name: 'Bottom 365',
-        description: 'Long-lasting probiotic solution',
-        composition: 'Bottom-degrading bacteria',
-        image: '/bottom365.png',
+        dosageWater: "500 grams/acre/week; better results when mixed with jaggery or molasses or as advised by aqua culture consultant.",
+        dosageFeed: "5 to 10 grams/kg feed/ twice in 15 days.",
+        usageDirection: "Mix with fresh or bore water and apply evenly all over pond area, keep the aerators running.",
+        netVolume: "500g"
+        },
+        {
+        name: "Seawel Bottom 365",
+        description: "Soil Probiotic",
+        composition: "Combination of thiobacillus sp. along with high concentrate with enzymes and soil related bacillus.",
+        image: "/bottom365.png",
         benefits: [
-          'Degrades organic sludge and harmful substances.',
-          'Improves bottom soil and prevents black soil formation.',
-          'Reduces pathogenic bacteria in pond bottom.'
+            "Reduces water exchange to the pond.",
+            "Maintains the water quality and pH in the pond.",
+            "Reduces organic loads COD and BOD.",
+            "Increases the DO level and reduces loads like Vibrio.",
+            "Protects pond bottom from organic loads.",
+            "Increases survival rate.",
+            "Stabilizes the water colour.",
+            "Relieves stress in animals.",
+            "Increases DO level in the pond."
         ],
-        dosageWater: '1 kg/acre/week.',
-        dosageFeed: 'Not applicable.',
-        usageDirection: 'Mix with pond water and apply during evening.',
-        netVolume: '1 kg.'
-      }
+        dosageWater: "500 grams/acre/week; better results mix with jaggery or molasses or as advised by aqua culture consultant.",
+        dosageFeed: "5 to 10 grams/kg feed/ twice in 15 days.",
+        usageDirection: "Mix with fresh or bore water and apply evenly all over pond area, keep the aerators running.",
+        netVolume: "500g"
+        }
+
     ]
-  }
+  },
+    {
+    name: 'Ammonia Nitrite Controller',
+    size: 'small',
+    products: [
+    {
+    name: "Seawel AN-X",
+    description: "Ammonia and Nitrite Controller",
+    composition: "Nitrobacter, Nitrosomonas, high concentrate liquid yucca with probiotics.",
+    image: "/ANX.png",
+    benefits: [
+        "Animals feel fresh and active.",
+        "Reduces ammonia and nitrite.",
+        "Reduces H2S gases in the pond.",
+        "Reduces stress on shrimp.",
+        "Improves water quality and reduces organic loads.",
+        "Reduces usage of probiotics in the pond."
+    ],
+    dosageWater: "2 litres/acre/once in every 15 days; better results mix with jaggery or molasses or advised by aqua culture consultant.",
+    dosageFeed: "10 to 20 ml/kg feed/twice in 15 days.",
+    usageDirection: "Mix with fresh or bore water and apply evenly all over pond area, keep the aerators running.",
+    netVolume: "1 Ltr & 5 Ltr"
+    }
+
+    ]
+  },
+    {
+        name: 'BOTTOM TREATMENT',
+        size: 'medium',
+        products: [
+        {
+        name: "Seawel Pond-Wel",
+        description: "Detoxify the Pond Soil",
+        composition: "Yucca, Buffer, Filler, Vit-C, Ferrous, Bentonite and natural pond bottom related ingredients.",
+        image: "/pondWel.png",
+        benefits: [
+            "Absorbs toxic gases like H2S.",
+            "Reduces COD and BOD in the pond.",
+            "Helps to increase the dissolved oxygen in the pond.",
+            "Makes the animals fresh by relieving stress caused due to toxic gases and other pollutants.",
+            "Improves water quality and stabilizes the water pH."
+        ],
+        dosageWater: "2 to 3 kg/acre/once in every 10 days or as advised by aqua culture consultant.",
+        dosageFeed: "5 to 10 grams/kg feed.",
+        usageDirection: "Take required quantity and through in the center of the pond; apply between 9 am to 4 pm.",
+        netVolume: "5 kg"
+        }
+    ]
+    }
 ];
 
 

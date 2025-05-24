@@ -62,14 +62,28 @@ const Products: React.FC = () => {
         { name: 'Bottom 365', description: 'Long-lasting probiotic solution' }
       ]
     },
+    {
+      name: 'AMMONIA NITRITE CONTROLLER',
+      size: 'small',
+      products: [
+        { name: 'AN-X', description: 'Specialized gut health solution' }
+      ]
+    },
+    {
+      name: 'BOTTOM TREATMENT',
+      size: 'medium',
+      products: [
+        { name: 'Pond wel', description: 'Comprehensive bottom treatment' },
+      ]
+    }
   ];
 
   const getSizeClass = (size: string) => {
     switch (size) {
       case 'small':
-        return 'w-28 h-28';
-      case 'medium':
         return 'w-32 h-32';
+      case 'medium':
+        return 'w-36 h-36';
       case 'large':
         return 'w-44 h-44';
       default:
