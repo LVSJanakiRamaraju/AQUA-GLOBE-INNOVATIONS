@@ -8,6 +8,7 @@ import About from './components/About';
 import CallToAction from './components/CallToAction';
 import Certifications from './components/Certifications';
 import CustomerTestimonials from './components/Customers';
+import ProductDetails from './components/ProductDetails';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path='/buy-now' element={<CallToAction />} />
           <Route path='/customers' element={<CustomerTestimonials />} />
           <Route path='/certifications' element={<Certifications />} />
+          <Route path="/product/:categoryName" element={<ProductDetails />} />
         </Routes>
         <Footer />
       </div>
