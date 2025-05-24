@@ -1,111 +1,151 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+
 
 interface Product {
   name: string;
-  subtitle: string;
-  image: string;
+  description: string;
+  image?: string;
+}
+
+interface Category {
+  name: string;
+  size: 'small' | 'medium' | 'large';
+  products: Product[];
 }
 
 const Products: React.FC = () => {
-  const products: Product[] = [
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  const categories: Category[] = [
     {
-      name: "20 COUNT",
-      subtitle: "WATER AND SOIL PROBIOTIC",
-      image: "/20Count.png"
+      name: 'MINERALS',
+      size: 'large',
+      products: [
+        { name: 'Sea pearl', description: 'Premium mineral supplement' },
+        { name: 'Cp ratio', description: 'Balanced mineral formula' },
+        { name: 'Mg pearl', description: 'Magnesium-rich supplement' },
+        { name: 'K pearl', description: 'Potassium-enriched formula' },
+        { name: 'Pearl mix', description: 'Complete mineral blend' }
+      ]
     },
     {
-      name: "BOTTOM 365",
-      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "/bottom365.png"
+      name: 'FEED SUPPLEMENTS',
+      size: 'medium',
+      products: [
+        { name: 'Gut well', description: 'Digestive health support' },
+        { name: 'Kick start', description: 'Growth initiator' },
+        { name: 'Immortal', description: 'Immunity booster' },
+        { name: '20 count', description: 'Premium feed supplement' }
+      ]
     },
     {
-      name: "CP RATION",
-      subtitle: "CONTROL FOR RUNNING MORTALITY",
-      image: "/cpRatio.png"
+      name: 'GROWTH PROMOTER',
+      size: 'small',
+      products: [
+        { name: '20 count', description: 'Enhanced growth formula' }
+      ]
     },
     {
-      name: "GUT WEL",
-      subtitle: "WHITE FAECES PREVENTION AND CONTROL",
-      image: "/gutWel.png"
+      name: 'WHITE GUT',
+      size: 'small',
+      products: [
+        { name: 'Gut well', description: 'Specialized gut health solution' }
+      ]
     },
     {
-      name: "IMMORTAL",
-      subtitle: "PROBIOTIC SOLUTION FOR AMMONIA AND NITRATE",
-      image: "/immortal.png"
+      name: 'PROBIOTICS',
+      size: 'medium',
+      products: [
+        { name: 'No loads v', description: 'Advanced probiotic formula' },
+        { name: 'Seawell bact', description: 'Marine probiotic blend' },
+        { name: 'Bottom 365', description: 'Long-lasting probiotic solution' }
+      ]
     },
-    {
-      name: "KICK START",
-      subtitle: "MICRO AND MACRO MINERALS",
-      image: "/kickStart.png"
-    },
-    {
-      name: "K PEARL",
-      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "/kPearl.png"
-    },
-    {
-      name: "MG PEARL",
-      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "/mgPearl.png"
-    },
-    {
-      name: "NO LOADS",
-      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "/noLoads.png"
-    },
-    {
-      name: "PEARL MIX",
-      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "/pearlMix.png"
-    },
-    {
-      name: "POND WEL",
-      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "/pondWel.png"
-    },
-    {
-      name: "SEA PEARL",
-      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "/seaPearl.png"
-    },
-    {
-      name: "SEAWEL BACT",
-      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "/seawelBact.png"
-    },
-    {
-      name: "SEAWEL GEL",
-      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "/seawelGel.png"
-    },
-    {
-      name: "VANNA HEP",
-      subtitle: "PROBIOTIC FOR VIBRIO CONTROLLER",
-      image: "/vannaHep.png"
-    }
   ];
 
-  return (
-    <section id="products" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-16">Our Products</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="aspect-square  rounded-lg mb-4">
-                <h3 className="text-xl font-bold text-blue-600">{product.name}</h3>
-                <p className="text-gray-600 mt-2">{product.subtitle}</p>
-                <img 
-                  src={product.image} 
-                  alt={product.name} 
-                  className="w-full h-full object-contain"
-                />
-              </div>
+  const getSizeClass = (size: string) => {
+    switch (size) {
+      case 'small':
+        return 'w-24 h-24';
+      case 'medium':
+        return 'w-28 h-28';
+      case 'large':
+        return 'w-44 h-44';
+      default:
+        return 'w-36 h-36';
+    }
+  };
 
-            </div>
-          ))}
+  return (
+    <section className="py-16 min-h-screen bg-[#F5F7FA] relative overflow-hidden center">
+
+      <div className="container mx-auto px-4 md:px-8 relative z-10 mt-20">
+        <div className="flex flex-wrap justify-center gap-12">
+          {categories.map((category, index) => {
+            const delay = Math.random() * 2;
+            const duration = 4 + Math.random() * 2;
+            const distance = 15 + Math.random() * 10;
+
+            return (
+              <motion.div
+                key={category.name}
+                animate={{ y: [0, -distance, 0] }}
+                transition={{
+                  duration,
+                  repeat: Infinity,
+                  repeatType: 'loop',
+                  ease: 'easeInOut',
+                  delay
+                }}
+                whileHover={{ scale: 1.05 }}
+                onClick={() => setSelectedCategory(category.name)}
+                className={`${getSizeClass(category.size)} relative cursor-pointer group`}
+              >
+                {/* Main bubble with gradient */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/90 via-blue-50/80 to-blue-100/70 backdrop-blur-sm shadow center" />
+
+                {/* Top highlight */}
+                <div className="absolute inset-[10%] top-[5%] rounded-full bg-white/60 opacity-70 center" />
+
+                {/* Bottom shadow */}
+                <div className="absolute inset-0 rounded-full shadow-lg blur-sm bg-blue-100/20 center" />
+
+                {/* Content */}
+                <div className="absolute inset-0 flex items-center justify-center p-4">
+                  <p className="text-blue-900 font-medium text-center text-sm md:text-base">
+                    {category.name}
+                  </p>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
+
+        {/* Product popup card */}
+        {selectedCategory && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-16 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8"
+          >
+            <h3 className="text-2xl font-bold text-blue-900 mb-6">{selectedCategory}</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {categories.find(c => c.name === selectedCategory)?.products.map((product, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-gradient-to-br from-blue-50 to-white rounded-lg p-6 shadow-md"
+                >
+                  <h4 className="text-xl font-semibold text-blue-800 mb-2">{product.name}</h4>
+                  <p className="text-gray-600">{product.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        )}
       </div>
     </section>
   );
