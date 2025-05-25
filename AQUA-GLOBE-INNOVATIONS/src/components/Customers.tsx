@@ -1,16 +1,16 @@
 const customers = [
   {
-    name: "Ramesh K.",
+    name: "Ramesh",
     image: "/customer1.jpeg",
     message: "Excellent product! My pond health improved in just a week.",
   },
   {
-    name: "Sujatha R.",
+    name: "Ramu",
     image: "/customer2.jpeg",
     message: "Very effective. Shrimp are more active and healthy now.",
   },
   {
-    name: "Arvind T.",
+    name: "Sarath",
     image: "/customer3.jpeg",
     message: "Trusted brand. Great support from Seawel Formulations team.",
   }
