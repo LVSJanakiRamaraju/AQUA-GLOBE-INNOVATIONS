@@ -12,6 +12,7 @@ interface Product {
   dosageFeed?: string;
   usageDirection?: string;
   netVolume?: string;
+  netWt?: string;
 }
 
 interface Category {
@@ -62,7 +63,7 @@ const categories: Category[] = [
 
         {
         name: "Seawel Mg-PEARL",
-        description: "Magnesium in chelated form for shrimp health.",
+        description: "Magnesium in chelated form",
         composition: "Chelated Magnesium enriched with amino acids and growth promoters.",
         image: "/mgPearl.png",
         benefits: [
@@ -80,7 +81,7 @@ const categories: Category[] = [
 
         {
         name: "Seawel K-Pearl",
-        description: "Potassium in chelated form for shrimp and fish health.",
+        description: "Potassium in chelated form",
         composition: "Chelated Potassium enriched with amino acids and growth promoters.",
         image: "/kPearl.png",
         benefits: [
@@ -98,7 +99,7 @@ const categories: Category[] = [
 
         {
         name: "Seawel Pearl-Mix",
-        description: "Micro and Macro Minerals in Crystal Form.",
+        description: "Micro and Macro Minerals",
         composition: "Calcium, Magnesium, Sodium, Phosphorus, Potassium, Manganese, Zinc, Silicates.",
         image: "/pearlMix.png",
         benefits: [
@@ -111,7 +112,7 @@ const categories: Category[] = [
         dosageWater: "10 to 20 kg/acre/week or as advised by aqua culture consultant.",
         dosageFeed: "10 to 20 grams/kg feed.",
         usageDirection: "Mix with pond water and apply evenly all over pond area, keep the aerators running.",
-        netVolume: "10 kg"
+        netWt: "10 kg"
         }
 
     ]
@@ -133,9 +134,9 @@ const categories: Category[] = [
             "Helps increase growth and weight of the shrimp."
         ],
         dosageWater: "Not applicable.",
-        dosageFeed: "8 to 10 grams/kg feed, 2 meals/day, twice every 10 days.",
+        dosageFeed: "3 to 5 grams/kg feed, 2 meals/day, twice every 10 days.",
         usageDirection: "8 to 10 grams/kg feed, 2 meals/day. Mix with a good binding agent.",
-        netVolume: "1 kg"
+        netWt: "1 kg"
         },
 
         {
@@ -153,7 +154,7 @@ const categories: Category[] = [
         dosageWater: "3 to 5kg/acre/week or as advised by aqua culture consultant.",
         dosageFeed: "10 to 20g/kg feed/2 meals/twice in a week.",
         usageDirection: "10 to 20g/kg feed/2 meals/twice in a week mix with good binding agent.",
-        netVolume: "500g & 1kg"
+        netWt: "500g & 1kg"
         },
 
         {
@@ -171,7 +172,7 @@ const categories: Category[] = [
         dosageWater: "Not applicable.",
         dosageFeed: "8 to 10 grams/kg feed/2 meals/day twice in every 10 days.",
         usageDirection: "8 to 10 grams/kg feed/2 meals/day mix with a good binding agent.",
-        netVolume: "500g"
+        netWt: "500g"
         },
 
         {
@@ -189,7 +190,7 @@ const categories: Category[] = [
         dosageWater: "Not applicable.",
         dosageFeed: "5 to 10 grams/kg feed/2 meals/day twice in every 10 days or moulting period or as advised by aqua culture consultant.",
         usageDirection: "Mix with a good binding agent 2 meals/day.",
-        netVolume: "500g"
+        netWt: "500g"
         },
       {
         name: 'Seawel Vanna Hep',
@@ -204,27 +205,44 @@ const categories: Category[] = [
           'Enhances the immunity of the shrimp.'
         ],
         dosageWater: 'Not applicable.',
-        dosageFeed: '8 to 10 gr/kg feed /2 months.day twice in every 10 days.',
-        usageDirection: '8 to 10 gr/kg feed /2 meals/day mix with a good binding agent.',
-        netVolume: '500 g.'
+        dosageFeed: '3 to 5 gr/kg feed /2 months.day twice in every 10 days.',
+        usageDirection: '3 to 5 gr/kg feed /2 meals/day mix with a good binding agent.',
+        netWt: '500 g.'
       },
-    {
+      {
         name: "Seawel Gel",
         description: "Liver Care Supplement",
-        composition: "Advanced formulation enhanced with protein fortifiers, Amino Acids with growth promoters.",
+        composition: `
+          Each 1000ml Contains:
+          - Vitamin A: 7500 IU
+          - Vitamin D3: 600 IU
+          - Vitamin E: 200 MG
+          - Vitamin B12: 600 MCG
+          - Folic Acid: 60 MG
+          - Vitamin B1: 80 MG
+          - Vitamin B6: 60 MG
+          - Biotin: 1200 MCG
+          - L-Lysine: 2000 MG
+          - DL-Methionine: 3000 MG
+          - Niacinamide: 3000 MG
+          - MG Citric Acid: 2000 MG
+          - Calcium: 20000 MG
+          - Flavour: Pineapple
+        `,
         image: "/seawelGel.png",
         benefits: [
-            "Improves feed conversion ratio.",
-            "Increases the survival rate in the pond.",
-            "Enhances immunity system.",
-            "Improves gut health in the shrimp.",
-            "Improves feed intake and increases the animal's energy."
+          "Improves feed conversion ratio.",
+          "Increases the survival rate in the pond.",
+          "Enhances the immunity system.",
+          "Improves gut health in the shrimp.",
+          "Improves feed intake and increases the animal's energy."
         ],
         dosageWater: "Not applicable.",
-        dosageFeed: "20 to 30 ml/kg feed/2 meals/day in every 10 days.",
-        usageDirection: "20 to 30 ml/kg feed/2 meals/2 day twice in every 10 days.",
+        dosageFeed: "20 to 30 ml/kg feed, 2 meals/day every 10 days.",
+        usageDirection: "20 to 30 ml/kg feed, 2 meals/day twice every 10 days.",
         netVolume: "20 Ltr."
-        }
+      }
+
 
     ]
   },
@@ -247,7 +265,7 @@ const categories: Category[] = [
         dosageWater: "Not applicable.",
         dosageFeed: "5 to 10 grams/kg feed/2 meals/day twice in every 10 days or moulting period or as advised by aqua culture consultant.",
         usageDirection: "Mix with a good binding agent 2 meals/day.",
-        netVolume: "500g"
+        netWt: "500g"
         }
     ]
   },
@@ -270,7 +288,7 @@ const categories: Category[] = [
         dosageWater: "Not applicable.",
         dosageFeed: "8 to 10 grams/kg feed, 2 meals/day, twice every 10 days.",
         usageDirection: "8 to 10 grams/kg feed, 2 meals/day. Mix with a good binding agent.",
-        netVolume: "1 kg"
+        netWt: "1 kg"
         },
     ]
   },
@@ -297,7 +315,7 @@ const categories: Category[] = [
         dosageWater: "500 grams/acre/week; better results if mixed with jaggery or molasses or as advised by aqua culture consultant.",
         dosageFeed: "5 to 10 grams/kg feed/ twice in 15 days.",
         usageDirection: "Mix with fresh or bore water and apply evenly all over pond area, keep the aerators running.",
-        netVolume: "500g"
+        netWt: "500g"
         },
 
         {
@@ -319,7 +337,7 @@ const categories: Category[] = [
         dosageWater: "500 grams/acre/week; better results when mixed with jaggery or molasses or as advised by aqua culture consultant.",
         dosageFeed: "5 to 10 grams/kg feed/ twice in 15 days.",
         usageDirection: "Mix with fresh or bore water and apply evenly all over pond area, keep the aerators running.",
-        netVolume: "500g"
+        netWt: "500g"
         },
         {
         name: "Seawel Bottom 365",
@@ -340,7 +358,7 @@ const categories: Category[] = [
         dosageWater: "500 grams/acre/week; better results mix with jaggery or molasses or as advised by aqua culture consultant.",
         dosageFeed: "5 to 10 grams/kg feed/ twice in 15 days.",
         usageDirection: "Mix with fresh or bore water and apply evenly all over pond area, keep the aerators running.",
-        netVolume: "500g"
+        netWt: "500g"
         }
 
     ]
@@ -389,7 +407,7 @@ const categories: Category[] = [
         dosageWater: "2 to 3 kg/acre/once in every 10 days or as advised by aqua culture consultant.",
         dosageFeed: "5 to 10 grams/kg feed.",
         usageDirection: "Take required quantity and through in the center of the pond; apply between 9 am to 4 pm.",
-        netVolume: "5 kg"
+        netWt: "5 kg"
         }
     ]
     }
@@ -480,6 +498,11 @@ const ProductDetails: React.FC = () => {
                     {product.netVolume && (
                     <p className="text-sm text-gray-800">
                         <strong>Net Vol.:</strong> {product.netVolume}
+                    </p>
+                    )}
+                    {product.netWt && (
+                    <p className="text-sm text-gray-800">
+                        <strong>Net Wt.:</strong> {product.netWt}
                     </p>
                     )}
                 </div>
