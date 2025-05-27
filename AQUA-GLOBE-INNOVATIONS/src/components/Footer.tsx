@@ -43,9 +43,9 @@ const Footer: React.FC = () => {
           </div>
           {/* Certification Images */}
           <div className="mt-10 flex justify-center items-center space-x-6">
-            <img src="/ISO_certification.jpeg" alt="ISO Certified" className="h-12 w-auto object-contain rounded-full" />
-            <img src="/GMP_certification.jpeg" alt="GMP Certified" className="h-12 w-auto object-contain rounded-full" />
-            <img src="/CAA_certification.jpeg" alt="CAA Certified" className="h-12 w-auto object-contain rounded-full" />
+            <img src="/ISO_certification.jpeg" alt="ISO Certified" className="h-14 w-auto object-contain rounded-full" />
+            <img src="/GMP_certification.jpeg" alt="GMP Certified" className="h-14 w-auto object-contain rounded-full" />
+            <img src="/CAA_certification.jpeg" alt="CAA Certified" className="h-14 w-auto object-contain rounded" />
           </div>
         </div>
       </footer>
