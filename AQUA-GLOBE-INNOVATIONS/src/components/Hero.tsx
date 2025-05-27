@@ -36,8 +36,10 @@ const Hero: React.FC = () => {
             <img
               src="/banner.png"
               alt="Hero Image"
-              className="w-full h-auto rounded-lg shadow-lg opacity-40  transition-opacity duration-300"
+              className="w-full h-auto rounded-lg shadow-lg opacity-100 transition duration-1000 ease-in-out animate-bounce hover:scale-105"
             />
+
+
             <br/>
             </div>
       </div>

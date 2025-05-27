@@ -96,7 +96,7 @@ const Products: React.FC = () => {
   };
 
   return (
-    <section className="py-16 min-h-screen bg-[#F5F7FA] relative overflow-hidden center">
+    <section className="py-16 bg-[#F5F7FA] relative overflow-hidden center" id='products'>
       <div className="container mx-auto px-4 md:px-8 relative z-10 mt-20">
         <div className="flex flex-wrap justify-center gap-12">
           {categories.map((category) => {

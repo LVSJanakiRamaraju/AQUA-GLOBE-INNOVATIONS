@@ -26,8 +26,8 @@ function App() {
             element={
               <>
                 <Hero />
-                <Features />
                 <Products />
+                <Features />
               </>
             }
           />
