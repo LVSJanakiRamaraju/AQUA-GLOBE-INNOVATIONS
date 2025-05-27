@@ -78,8 +78,8 @@ const CallToAction: React.FC = () => {
           <div className="md:w-1/2 bg-gray-50 rounded-lg border border-gray-200 p-8 shadow-sm">
             <form onSubmit={handleSubmit} className="space-y-6">
               <input type="hidden" name="access_key" value="53649f62-67c4-46e7-9161-e32dc138c2ad"/>
-              <input type="hidden" name="from_name" value="Portfolio Contact Form" />
-              <input type="hidden" name="subject" value="New message from portfolio contact form" />
+              <input type="hidden" name="from_name" value="Seawel formulations web page" />
+              <input type="hidden" name="subject" value="New message to Seawel formulations" />
 
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-1 text-gray-800">

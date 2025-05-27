@@ -10,6 +10,7 @@ interface Product {
   benefits?: string[];
   dosageWater?: string;
   dosageFeed?: string;
+  AdvancedinFeed?: string;
   usageDirection?: string;
   netVolume?: string;
   netWt?: string;
@@ -134,7 +135,7 @@ const categories: Category[] = [
             "Helps increase growth and weight of the shrimp."
         ],
         dosageWater: "Not applicable.",
-        dosageFeed: "3 to 5 grams/kg feed, 2 meals/day, twice every 10 days.",
+        AdvancedinFeed: "3 to 5 grams/kg feed, 2 meals/day, twice every 10 days.",
         usageDirection: "8 to 10 grams/kg feed, 2 meals/day. Mix with a good binding agent.",
         netWt: "1 kg"
         },
@@ -483,6 +484,12 @@ const ProductDetails: React.FC = () => {
                     {product.dosageWater && (
                     <p className="text-sm text-gray-800 mb-1">
                         <strong>Dosage in water:</strong> {product.dosageWater}
+                    </p>
+                    )}
+                    {
+                    product.AdvancedinFeed && (
+                    <p className="text-sm text-gray-800 mb-1">
+                        <strong>Advanced in feed:</strong> {product.AdvancedinFeed}
                     </p>
                     )}
                     {product.dosageFeed && (
