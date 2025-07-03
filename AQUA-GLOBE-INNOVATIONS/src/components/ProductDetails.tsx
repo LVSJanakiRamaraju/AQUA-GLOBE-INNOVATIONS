@@ -31,7 +31,7 @@ const categories: Category[] = [
         name: 'Seawel Sea pearl',
         description: 'Liquid Minerals',
         composition: 'Calcium, Magnesium, Zinc, Potash, Copper and other Micro Nutrients',
-        image: '/seaPearl.png',
+        image: '/seaPearl.JPG',
         benefits: [
           'Stabilizes the availability of minerals in pond water.',
           'Reduces white muscle problem and loose shell problem.',
@@ -48,7 +48,7 @@ const categories: Category[] = [
         name: "Seawel CP Ratio",
         description: "Liquid minerals for shrimp health.",
         composition: " Calcium, Phosphorus, Sodium, Copper, Manganese, Zinc, Magnesium, Cobalt.",
-        image: "/cpRatio.png",
+        image: "/cpRatio.JPG",
         benefits: [
             "Helps prevent loose shell and reduce mortality.",
             "Increases survival rate and reduces stress on shrimp.",
@@ -66,7 +66,7 @@ const categories: Category[] = [
         name: "Seawel Mg-PEARL",
         description: "Magnesium in chelated form",
         composition: "Chelated Magnesium enriched with amino acids and growth promoters.",
-        image: "/mgPearl.png",
+        image: "/mgPearl.JPG",
         benefits: [
             "Improves activeness of the shrimp.",
             "Maintains magnesium level in the shrimp.",
@@ -84,7 +84,7 @@ const categories: Category[] = [
         name: "Seawel K-Pearl",
         description: "Potassium in chelated form",
         composition: "Chelated Potassium enriched with amino acids and growth promoters.",
-        image: "/kPearl.png",
+        image: "/kPearl.JPG",
         benefits: [
             "Improves metabolic activity in shrimp and fish.",
             "Improves water quality and stabilizes water pH.",
@@ -126,7 +126,7 @@ const categories: Category[] = [
         name: "Seawel Gut Wel",
         description: "Advanced formula for white gut and white faeces",
         composition: "Prebiotics, Probiotics, Phospholipids, Vitamins, Enzymes and liver enhancers.",
-        image: "/gutWel.png",
+        image: "/gutWel.JPG",
         benefits: [
             "Modulates immunity.",
             "Helps prevent white gut & active hepatopancreas.",
@@ -144,7 +144,7 @@ const categories: Category[] = [
         name: "Seawel Kick Start",
         description: "Multi Vitamins, Enzymes & Growth Promoters",
         composition: "High concentration of multi vitamins, essential amino acids, chelated minerals and growth promoters.",
-        image: "/kickStart.png",
+        image: "/kickStart.JPG",
         benefits: [
             "Increases the survival rate in the pond.",
             "Improves feed conversion ratio.",
@@ -162,7 +162,7 @@ const categories: Category[] = [
         name: "Seawel Immortal",
         description: "Reduce RMS Problem",
         composition: "Probiotics, Prebiotics, Vitamins and Growth promoters and natural ingredients.",
-        image: "/immortal.png",
+        image: "/immortal.JPG",
         benefits: [
             "Reduces running mortality and increases survival rate.",
             "Helps active functioning of hepatopancreas.",
@@ -180,7 +180,7 @@ const categories: Category[] = [
         name: "Seawel 20 Count",
         description: "Quick Harvest with 20 Count",
         composition: "Combination of Multi vitamins, Chelated Multi minerals, bacillus, lacto bacillus spp., amino acids and growth promoters.",
-        image: "/20Count.png",
+        image: "/20Count.JPG",
         benefits: [
             "Helps enhance immunity in shrimp.",
             "Increases growth and improves shrimp digestive system.",
@@ -197,7 +197,7 @@ const categories: Category[] = [
         name: 'Seawel Vanna Hep',
         description: 'Liver health enhancer',
         composition: 'Probiotics, Amino Acids, Peptides, Vitamins, Enzymes, Growth promotes and Natural ingredients',
-        image: '/vannaHep.png',
+        image: '/vannaHep.JPG',
         benefits: [
           'Helps in maintaining healthy HP',
           'Increases the growth and weight gain of the shrimp.',
@@ -230,7 +230,7 @@ const categories: Category[] = [
           - Calcium: 20000 MG
           - Flavour: Pineapple
         `,
-        image: "/seawelGel.png",
+        image: "/seawelGel.JPG",
         benefits: [
           "Improves feed conversion ratio.",
           "Increases the survival rate in the pond.",
@@ -255,7 +255,7 @@ const categories: Category[] = [
         name: "Seawel 20 Count",
         description: "Quick Harvest with 20 Count",
         composition: "Combination of Multi vitamins, Chelated Multi minerals, bacillus, lacto bacillus spp., amino acids and growth promoters.",
-        image: "/20Count.png",
+        image: "/20Count.JPG",
         benefits: [
             "Helps enhance immunity in shrimp.",
             "Increases growth and improves shrimp digestive system.",
@@ -278,7 +278,7 @@ const categories: Category[] = [
         name: "Seawel Gut Wel",
         description: "Advanced formula for white gut and white faeces",
         composition: "Prebiotics, Probiotics, Phospholipids, Vitamins, Enzymes and liver enhancers.",
-        image: "/gutWel.png",
+        image: "/gutWel.JPG",
         benefits: [
             "Modulates immunity.",
             "Helps prevent white gut & active hepatopancreas.",
@@ -301,7 +301,7 @@ const categories: Category[] = [
         name: "Seawel No Loads-V",
         description: "Fights with Vibrio Bacteria",
         composition: "Bacillus subtilis, Bacillus polymyxa, Bacillus licheniformis, Bacillus coagulans, Bacillus megaterium, Bacillus amyloliquefaciens 12 billion CFU/gram.",
-        image: "/noLoads.png",
+        image: "/noLoads.jpg",
         benefits: [
             "Increases the survival in the pond.",
             "Reduces stress on shrimp.",
@@ -323,7 +323,7 @@ const categories: Category[] = [
         name: "Seawel Bact",
         description: "Water Probiotic",
         composition: "Combination of bacillus strains, enzymes and vitamins. 10 billion CFU/gram.",
-        image: "/seawelBact.png",
+        image: "/seawelBact.JPG",
         benefits: [
             "Improves water quality.",
             "Improves DO level in the pond.",
@@ -344,7 +344,7 @@ const categories: Category[] = [
         name: "Seawel Bottom 365",
         description: "Soil Probiotic",
         composition: "Combination of thiobacillus sp. along with high concentrate with enzymes and soil related bacillus.",
-        image: "/bottom365.png",
+        image: "/bottom365.JPG",
         benefits: [
             "Reduces water exchange to the pond.",
             "Maintains the water quality and pH in the pond.",
@@ -372,7 +372,7 @@ const categories: Category[] = [
     name: "Seawel AN-X",
     description: "Ammonia and Nitrite Controller",
     composition: "Nitrobacter, Nitrosomonas, high concentrate liquid yucca with probiotics.",
-    image: "/ANX.png",
+    image: "/ANX.JPG",
     benefits: [
         "Animals feel fresh and active.",
         "Reduces ammonia and nitrite.",
@@ -397,7 +397,7 @@ const categories: Category[] = [
         name: "Seawel Pond-Wel",
         description: "Detoxify the Pond Soil",
         composition: "Yucca, Buffer, Filler, Vit-C, Ferrous, Bentonite and natural pond bottom related ingredients.",
-        image: "/pondWel.png",
+        image: "/pondWel.JPG",
         benefits: [
             "Absorbs toxic gases like H2S.",
             "Reduces COD and BOD in the pond.",
@@ -427,12 +427,7 @@ const ProductDetails: React.FC = () => {
   return (
     <section className="min-h-screen bg-[#F5F7FA] px-4 py-12">
         <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+
         
       <div className="max-w-6xl mx-auto">
 
@@ -452,11 +447,14 @@ const ProductDetails: React.FC = () => {
                 >
                 {/* Content first on sm/md; image first on lg using flex-col-reverse and flex-row */}
                 {product.image && (
+                  <div className="w-50 h-50 overflow-hidden rounded-md border shadow-sm flex items-center justify-center">
                     <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-50 h-50 object-cover rounded-md border shadow-sm mx-auto lg:mx-0"
+                      src={product.image}
+                      alt={product.name}
+                      className="w-[160%] h-[100%] object-cover transform scale-125 max-w-[250px] max-h-[250px]"
                     />
+                  </div>
+
                 )}
                 <div className="flex-1">
                     <h4 className="text-xl font-semibold text-blue-800 mb-2">
