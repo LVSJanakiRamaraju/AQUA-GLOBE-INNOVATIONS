@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -12,6 +12,7 @@ interface Product {
   dosageFeed?: string;
   AdvancedinFeed?: string;
   usageDirection?: string;
+  caa?: string;
   netVolume?: string;
   netWt?: string;
 }
@@ -42,6 +43,7 @@ const categories: Category[] = [
         dosageWater: '2 to 3 litres/acre/week or as advised by aqua culture consultant.',
         dosageFeed: '10 to 20 ml/kg feed.',
         usageDirection: 'Apply in the pond evening time between 6 to 8 pm mix with pond water and apply evenly all over pond area, keep the aerators running.',
+        caa:"CAA/APRIL 2025/CHEM/07939",
         netVolume: '5 Ltr.'
       },
         {
@@ -59,6 +61,7 @@ const categories: Category[] = [
         dosageWater: "2 to 3 litres/acre or as advised by aqua culture consultant.",
         dosageFeed: "10 to 20 ml/kg feed.",
         usageDirection: "Take required quantity of liquid and apply evenly in the pond.",
+        caa:"CAA/JUNE 2025/FA/08762",
         netVolume: "5 Ltr."
         },
 
@@ -77,6 +80,7 @@ const categories: Category[] = [
         dosageWater: "2 to 3 litres/acre/week or as advised by aqua culture consultant.",
         dosageFeed: "10 to 20 ml/kg feed.",
         usageDirection: "Apply in the pond evening time between 6 to 8 pm, mix with pond water and apply evenly all over pond area, keep the aerators running.",
+        caa:"CAA/JUNE 2025/CHEM/08860",
         netVolume: "5 Ltr."
         },
 
@@ -95,6 +99,7 @@ const categories: Category[] = [
         dosageWater: "2 to 3 litres/acre/week or as advised by aqua culture consultant.",
         dosageFeed: "10 to 20 ml/kg feed.",
         usageDirection: "Apply in the pond evening time between 6 to 8 pm, mix with pond water and apply evenly all over pond area, keep the aerators running.",
+        caa:"CAA/JUNE 2025/FA/08765",
         netVolume: "5 Ltr."
         },
 
@@ -113,6 +118,7 @@ const categories: Category[] = [
         dosageWater: "10 to 20 kg/acre/week or as advised by aqua culture consultant.",
         dosageFeed: "10 to 20 grams/kg feed.",
         usageDirection: "Mix with pond water and apply evenly all over pond area, keep the aerators running.",
+        caa:"CAA/JUNE 2025/CHEM/07939", 
         netWt: "10 kg"
         }
 
@@ -137,6 +143,7 @@ const categories: Category[] = [
         dosageWater: "Not applicable.",
         AdvancedinFeed: "3 to 5 grams/kg feed, 2 meals/day, twice every 10 days.",
         usageDirection: "8 to 10 grams/kg feed, 2 meals/day. Mix with a good binding agent.",
+        caa: "CAA/JUNE 2025/FA/08763",
         netWt: "1 kg"
         },
 
@@ -191,6 +198,7 @@ const categories: Category[] = [
         dosageWater: "Not applicable.",
         dosageFeed: "5 to 10 grams/kg feed/2 meals/day twice in every 10 days or moulting period or as advised by aqua culture consultant.",
         usageDirection: "Mix with a good binding agent 2 meals/day.",
+        caa: "CAA/APRIL 2025/CHEM/07942",
         netWt: "500g"
         },
       {
@@ -208,6 +216,7 @@ const categories: Category[] = [
         dosageWater: 'Not applicable.',
         dosageFeed: '3 to 5 gr/kg feed /2 months.day twice in every 10 days.',
         usageDirection: '3 to 5 gr/kg feed /2 meals/day mix with a good binding agent.',
+        caa: 'CAA/APRIL 2025/CHEM/07944',
         netWt: '500 g.'
       },
       {
@@ -241,6 +250,7 @@ const categories: Category[] = [
         dosageWater: "Not applicable.",
         dosageFeed: "20 to 30 ml/kg feed, 2 meals/day every 10 days.",
         usageDirection: "20 to 30 ml/kg feed, 2 meals/day twice every 10 days.",
+        caa: "CAA/JUNE 2025/FA/08764",
         netVolume: "20 Ltr."
       }
 
@@ -266,6 +276,7 @@ const categories: Category[] = [
         dosageWater: "Not applicable.",
         dosageFeed: "5 to 10 grams/kg feed/2 meals/day twice in every 10 days or moulting period or as advised by aqua culture consultant.",
         usageDirection: "Mix with a good binding agent 2 meals/day.",
+        caa: "CAA/APRIL 2025/CHEM/07942",
         netWt: "500g"
         }
     ]
@@ -289,6 +300,7 @@ const categories: Category[] = [
         dosageWater: "Not applicable.",
         dosageFeed: "8 to 10 grams/kg feed, 2 meals/day, twice every 10 days.",
         usageDirection: "8 to 10 grams/kg feed, 2 meals/day. Mix with a good binding agent.",
+        caa: "CAA/JUNE 2025/FA/08763",
         netWt: "1 kg"
         },
     ]
@@ -316,6 +328,7 @@ const categories: Category[] = [
         dosageWater: "500 grams/acre/week; better results if mixed with jaggery or molasses or as advised by aqua culture consultant.",
         dosageFeed: "5 to 10 grams/kg feed/ twice in 15 days.",
         usageDirection: "Mix with fresh or bore water and apply evenly all over pond area, keep the aerators running.",
+        caa:"CAA/APRIL 2025/CHEM/07943",
         netWt: "500g"
         },
 
@@ -384,6 +397,7 @@ const categories: Category[] = [
     dosageWater: "2 litres/acre/once in every 15 days; better results mix with jaggery or molasses or advised by aqua culture consultant.",
     dosageFeed: "10 to 20 ml/kg feed/twice in 15 days.",
     usageDirection: "Mix with fresh or bore water and apply evenly all over pond area, keep the aerators running.",
+    caa:"CAA/APRIL 2025/PRO/07945",
     netVolume: "1 Ltr & 5 Ltr"
     }
 
@@ -408,6 +422,7 @@ const categories: Category[] = [
         dosageWater: "2 to 3 kg/acre/once in every 10 days or as advised by aqua culture consultant.",
         dosageFeed: "5 to 10 grams/kg feed.",
         usageDirection: "Take required quantity and through in the center of the pond; apply between 9 am to 4 pm.",
+        caa:"CAA/APRIL 2025/CHEM/07941",
         netWt: "5 kg"
         }
     ]
@@ -447,14 +462,13 @@ const ProductDetails: React.FC = () => {
                 >
                 {/* Content first on sm/md; image first on lg using flex-col-reverse and flex-row */}
                 {product.image && (
-                  <div className="w-50 h-50 overflow-hidden rounded-md border shadow-sm flex items-center justify-center">
+                  <div className="w-62 h-62 overflow-hidden rounded-md border shadow-sm flex items-center justify-center">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-[160%] h-[100%] object-cover transform scale-125 max-w-[250px] max-h-[250px]"
+                      className="w-[150%] h-[100%] object-cover scale-125 max-w-[370px] max-h-[300px] transition-transform duration-500 group-hover:scale-[2.6]"
                     />
                   </div>
-
                 )}
                 <div className="flex-1">
                     <h4 className="text-xl font-semibold text-blue-800 mb-2">
@@ -500,6 +514,13 @@ const ProductDetails: React.FC = () => {
                         <strong>Direction of use:</strong> {product.usageDirection}
                     </p>
                     )}
+                    {
+                      product.caa && (
+                        <p className="text-sm text-gray-800 mb-1">
+                          <strong>CAA:</strong> {product.caa}
+                        </p>
+                      )
+                    }
                     {product.netVolume && (
                     <p className="text-sm text-gray-800">
                         <strong>Net Vol.:</strong> {product.netVolume}
