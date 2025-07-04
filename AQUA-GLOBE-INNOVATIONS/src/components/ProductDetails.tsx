@@ -458,15 +458,15 @@ const ProductDetails: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-blue-50 to-white p-4 rounded-xl shadow-md flex flex-col sm: flex-row-reverse lg:flex-row lg:items-center gap-6"
+                className="bg-gradient-to-br from-blue-50 to-white p-4 rounded-xl shadow-md flex flex-col sm: flex-row-reverse items-center lg:flex-row lg:items-center gap-6"
                 >
                 {/* Content first on sm/md; image first on lg using flex-col-reverse and flex-row */}
                 {product.image && (
-                  <div className="w-62 h-62 overflow-hidden rounded-md border shadow-sm flex items-center justify-center">
+                  <div className="w-52 h-52 overflow-hidden rounded-md border shadow-sm flex items-center justify-center group">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-[150%] h-[100%] object-cover scale-125 max-w-[370px] max-h-[300px] transition-transform duration-500 group-hover:scale-[2.6]"
+                      className="transition-transform duration-500 object-cover max-w-[240px] max-h-[220px] "
                     />
                   </div>
                 )}
