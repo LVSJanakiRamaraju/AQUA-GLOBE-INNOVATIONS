@@ -9,22 +9,17 @@ const customers = [
     image: "/customer2.jpeg",
     message: "Very effective. Shrimp are more active and healthy now.",
   },
-  {
-    name: "Sarath",
-    image: "/customer3.jpeg",
-    message: "Trusted brand. Great support from Seawel Formulations team.",
-  }
 ];
 
 const CustomerTestimonials = () => {
   return (
-    <section className="bg-gray-100 py-10 px-4">
+    <section className="bg-gray-100 py-10 px-4 items-center">
         <br/>
       <h2 className="text-3xl font-bold text-center text-blue-700 mb-8">
         Happy Customers
       </h2>
 
-      <div className="grid gap-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-w-6xl mx-auto">
+      <div className="grid gap-6 items-center md:grid-cols-2 sm:grid-cols-2 grid-cols-1 max-w-6xl mx-auto xl:grid-cols-2">
         {customers.map((cust, index) => (
           <div
             key={index}
@@ -33,7 +28,7 @@ const CustomerTestimonials = () => {
             <img
               src={cust.image}
               alt={cust.name}
-              className="w-84 h-64 object-cover border-4 border-blue-200 mb-4"
+              className="w-84 h-64 object-cover border-4 border-blue-200 mb-4 items-center"
             />
             <p className="italic text-gray-600 mb-2">"{cust.message}"</p>
             <p className="font-semibold text-blue-700">{cust.name}</p>
